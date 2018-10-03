@@ -94,10 +94,17 @@ public class RendezvousService {
 
 		return rdv;
 	}
+	/**
+	*methode pour supprimer
+	*@param id 
+	*/
 	public void remove(int id) {
 		daordv.delete(daordv.findById(id));
 	}
-	
+	/**
+	*methode pour metre a jour
+	*@param id 
+	*/
 	public void update(int id, String lieu, String type, int duree) {
 		Rendezvous rdv = daordv.findById(id);
 		rdv.setDuree(duree);

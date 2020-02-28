@@ -20,7 +20,8 @@ public class RendezvousService {
 	private ArrayList<Rendezvous> listeRendezVous = new ArrayList<Rendezvous>();// liste de rendez-vous
 
 	@Autowired
-	RendezvousDAO daordv;
+	RendezvousDAO daordv;//dao pour le rdv
+	
 
 	public RendezvousService() {
 
